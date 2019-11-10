@@ -13,6 +13,7 @@ dependencies:
   rxdart:
   stack_trace:
   equatable:
+  provider:
 
 dev_dependencies:
   flutter_test:
