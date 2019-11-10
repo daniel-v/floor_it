@@ -4,13 +4,6 @@ import 'package:floor_it/throttle.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  test('function equality', () {
-    final cb = () {};
-    final a = cb;
-    final b = cb;
-    expect(a == b, isTrue);
-  });
-
   test('should assert when computation is null', () {
     expect(() {
       throttle(computation: null);

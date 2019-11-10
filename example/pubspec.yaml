@@ -1,0 +1,8 @@
+name: floot_it_examples
+
+environment:
+  sdk: ">=2.2.2 <3.0.0"
+
+dependencies:
+  floor_it:
+    path: ../
