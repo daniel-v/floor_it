@@ -2,6 +2,7 @@
 
 * add `Lazy` and `AsyncLazy` object for lazy initialization of value
 * `Result.fold` now accepts generic parameter
+* add `throttle` function
 
 ## [0.2.0] - 2019-11-03
 
