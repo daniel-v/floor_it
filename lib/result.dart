@@ -15,7 +15,7 @@ abstract class Result<Failure, Success> {
   ResultFailure<Failure, Success> get asFailure =>
     !isSuccess ? this : throw StateError('ResultFailre cannot be accessed as success');
 
-  FutureOr fold(onFailure(Failure f), onSuccess(Success s)) {
+  FutureOr<T> fold<T>(T onFailure(Failure f), T onSuccess(Success s)) {
     return isSuccess ? onSuccess(_successValue) : onFailure(_failureValue);
   }
 
