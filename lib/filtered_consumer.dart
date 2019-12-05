@@ -42,7 +42,7 @@ class _FilteredConsumerState<T> extends State<FilteredConsumer<T>> {
   @override
   Widget build(BuildContext context) {
     final val = Provider.of<T>(context, listen: false);
-    bool shouldRebuild = cache == null || widget.condition(context, val);
+    final shouldRebuild = cache == null || widget.condition(context, val);
     if (shouldRebuild) {
       cache = widget.builder(context, val);
     }

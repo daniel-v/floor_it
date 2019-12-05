@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_function_declarations_over_variables
+// ignore_for_file: omit_local_variable_types
 import 'dart:async';
 
 import 'package:floor_it/throttle.dart';

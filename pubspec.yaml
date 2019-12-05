@@ -1,6 +1,6 @@
 name: floor_it
 description: Tiny code snippets, utils and widgets to boost productivity
-version: 0.3.0
+version: 0.3.1
 author: Daniel Varga-Hali
 homepage: https://github.com/daniel-v/floor_it
 
@@ -16,9 +16,9 @@ dependencies:
   provider:
 
 dev_dependencies:
+  effective_dart: ^1.1.0
   flutter_test:
     sdk: flutter
-  pedantic: # skip version info to align it with Flutter
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec

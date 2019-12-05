@@ -1,3 +1,4 @@
+// ignore_for_file: omit_local_variable_types
 import 'dart:async';
 
 import 'package:floor_it/stream_observer.dart';
@@ -5,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:rxdart/rxdart.dart';
 
-main() {
+void main() {
   group('StreamObserver', () {
     testWidgets('onWaiting displayed', (tester) async {
       final widget = StreamObserver<String>(
@@ -50,7 +51,7 @@ main() {
       final widget = StreamObserver<String>(
         stream: Stream.fromFuture(Future.error('dang!')),
         onWaiting: (_) => Text('waiting'),
-        onSuccess: (_, data) {},
+        onSuccess: (_, data) => Container(),
         onError: (err) => Text('$err'),
       );
       await tester.pumpWidget(wrapInApp(widget));
@@ -63,7 +64,7 @@ main() {
       final widget = StreamObserver<String>(
         stream: stream,
         onWaiting: (state) => Text('$state'),
-        onSuccess: (_, __) {},
+        onSuccess: (_, __) => Container(),
       );
       await tester.pumpWidget(wrapInApp(widget));
       expect(find.text('ConnectionState.waiting'), findsOneWidget);

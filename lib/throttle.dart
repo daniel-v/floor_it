@@ -15,7 +15,7 @@ set throttleCleanupStrategy(ThrottleCleanupStrategy strategy) {
 
 typedef ThrottleCallback = void Function();
 
-final _timers = Map<_ComparableFrame, int>();
+final _timers = <_ComparableFrame, int>{};
 
 class _ComparableFrame with EquatableMixin {
   final Frame frame;

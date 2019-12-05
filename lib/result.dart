@@ -41,7 +41,7 @@ class ResultSuccess<F, S> extends Result<F, S> {
   int get hashCode => (0 + _successValue.hashCode) ^ 17;
 
   @override
-  bool operator ==(other) {
+  bool operator ==(Object other) {
     return identical(this, other) || other is ResultSuccess && _successValue == other._successValue;
   }
 }
@@ -65,7 +65,7 @@ class ResultFailure<F, S> extends Result<F, S> {
   int get hashCode => (0 + _failureValue.hashCode) ^ 17;
 
   @override
-  bool operator ==(other) {
+  bool operator ==(Object other) {
     return identical(this, other) || other is ResultFailure && _failureValue == other._failureValue;
   }
 }
