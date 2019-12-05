@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 T getCurrentRoute<T extends Route>(NavigatorState navigator) {
   T currentRoute;
   navigator.popUntil((route) {
-    route = route;
+    currentRoute = route;
     return true;
   });
   return currentRoute;
