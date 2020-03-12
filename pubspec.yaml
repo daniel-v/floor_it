@@ -5,15 +5,16 @@ author: Daniel Varga-Hali
 homepage: https://github.com/daniel-v/floor_it
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.6.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  rxdart:
+  rxdart: ^0.23.1
   stack_trace:
   equatable:
   provider:
+  bloc:
 
 dev_dependencies:
   effective_dart: ^1.1.0
