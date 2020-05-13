@@ -10,11 +10,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  rxdart: ^0.23.1
+  rxdart: ^0.24.0
   stack_trace:
   equatable:
   provider:
-  bloc:
+  bloc: ^4.0.0
+  async:
 
 dev_dependencies:
   effective_dart: ^1.1.0
